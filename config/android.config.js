@@ -1,18 +1,20 @@
 const {config} = require('./wdio.conf');
 const AndroidInfo = require('./android.info');
-const path = require('path');
+//const path = require('path');
 
 // Appium capabilities
 config.capabilities = [
     {
         platformName: 'Android',
-        noReset: true,
-        fullReset: false,
-        maxInstances: 1,
-        automationName: 'uiautomator2',
-        deviceName: AndroidInfo.deviceName(),
-        platformVersion: AndroidInfo.platFormVersion(),
-        app: path.resolve(`./apps/${AndroidInfo.appName()}`)
+        'appium:noReset': true,
+        'appium:fullReset': false,
+        'appium:maxInstances': 1,
+        'appium:automationName': 'uiautomator2',
+        'appium:deviceName': AndroidInfo.deviceName(),
+        'appium:platformVersion': AndroidInfo.platFormVersion(),
+        'appium:appPackage': 'com.saucelabs.mydemoapp.android',
+        'appium:appActivity': 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity',
+        //'appium:app': path.resolve(`./apps/${AndroidInfo.appName()}`)
     }
 ];
 

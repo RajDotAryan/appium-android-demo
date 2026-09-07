@@ -99,7 +99,7 @@ exports.config = {
         args: {},
     },
     port: 4723,
-    path: '/wd/hub',
+    path: '/',
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks.html
@@ -118,7 +118,8 @@ exports.config = {
         require: [
             './src/stepDefinitions/celsiusToFahrenheitConvertor.steps.js',
             './src/stepDefinitions/google.steps.js',
-            './src/stepDefinitions/settings.steps.js'
+            './src/stepDefinitions/settings.steps.js',
+            './src/stepDefinitions/sauceLabDemoApp.steps.js'
         ],
         snippetSyntax: undefined,
         snippets: true,

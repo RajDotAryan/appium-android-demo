@@ -1,10 +1,10 @@
 class AndroidInfo {
     static deviceName() {
-        return '5527c8fb'; // pass the udid or devicename
+        return '192.168.1.2:44119'; // pass the udid or devicename
     }
 
     static platFormVersion() {
-        return '9'; // pass the platform version
+        return '16'; // pass the platform version
     }
 
     static appName() {
