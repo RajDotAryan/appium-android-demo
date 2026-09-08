@@ -1,6 +1,6 @@
 const {config} = require('./wdio.conf');
 const AndroidInfo = require('./android.info');
-//const path = require('path');
+const path = require('path');
 
 // Appium capabilities
 config.capabilities = [
@@ -12,9 +12,7 @@ config.capabilities = [
         'appium:automationName': 'uiautomator2',
         'appium:deviceName': AndroidInfo.deviceName(),
         'appium:platformVersion': AndroidInfo.platFormVersion(),
-        'appium:appPackage': 'com.saucelabs.mydemoapp.android',
-        'appium:appActivity': 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity',
-        //'appium:app': path.resolve(`./apps/${AndroidInfo.appName()}`)
+        'appium:app': path.resolve(`./apps/${AndroidInfo.appName()}`)
     }
 ];
 
