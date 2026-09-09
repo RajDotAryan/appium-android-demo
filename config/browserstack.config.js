@@ -16,7 +16,6 @@ const config = {
             'appium:deviceName': 'Google Pixel 7',
             'appium:app': 'bs://bs://cb15dcb932e1bb0d49b522733c4cc67ed33fb037',
             'appium:automationName': 'uiautomator2',
-
             'bstack:options': {
                 projectName: 'Sauce Labs Demo App',
                 buildName: `Build ${new Date().toISOString()}`,
