@@ -77,9 +77,9 @@ const config = {
     },
 
     onComplete: function () {
-        const report = require('multiple-cucumber-html-reporter');
+        const { generate } = require('multiple-cucumber-html-reporter');
 
-        report.generate({
+        generate({
             jsonDir: './reports/json',
             reportPath: './reports/html',
 
