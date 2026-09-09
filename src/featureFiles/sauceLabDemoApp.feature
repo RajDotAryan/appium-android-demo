@@ -8,7 +8,7 @@ Background:
   And I tap the login button
   Then I should see the products screen
 
-@androidApp
+@sauceLabsApp
 Scenario: User logs in, adds a product to cart and proceeds to checkout
   When I tap on the product "Sauce Labs Backpack (orange)"
   Then I should see the product detail screen

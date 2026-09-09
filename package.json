@@ -21,6 +21,7 @@
   "author": "Arjun Annamalai - arjun1120@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "@wdio/allure-reporter": "^9.31.4",
     "@wdio/appium-service": "^6.1.0",
     "@wdio/cli": "^6.1.12",
     "@wdio/cucumber-framework": "^6.1.13",
@@ -28,14 +29,15 @@
     "@wdio/mocha-framework": "^6.1.8",
     "@wdio/spec-reporter": "^6.1.12",
     "@wdio/sync": "^6.1.8",
+    "allure-commandline": "^2.43.0",
     "chromedriver": "^83.0.0",
     "eslint": "^7.3.0",
+    "multiple-cucumber-html-reporter": "^4.3.0",
     "wdio-chromedriver-service": "^6.0.3"
   },
   "dependencies": {
     "chai": "^4.2.0",
     "cucumber": "^6.0.5",
-    "multiple-cucumber-html-reporter": "^1.16.2",
     "wdio-cucumberjs-json-reporter": "^2.0.2"
   }
 }
