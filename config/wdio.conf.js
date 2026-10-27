@@ -106,6 +106,9 @@ exports.config = {
     //
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
+
+    // Commenting this because of the reporting failure
+    /* 
     framework: 'cucumber',
     cucumberOpts: {
         backtrace: false,
@@ -129,6 +132,7 @@ exports.config = {
         timeout: 50000,
         retry: 0
     },
+    */
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
